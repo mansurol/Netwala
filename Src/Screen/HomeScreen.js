@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { View, Text, StyleSheet, Animated, Image } from "react-native";
 
 // Import your logo image
-import LogoImage from "../../assets/splash.png";
+import LogoImage from "../../assets/icon-for-ui.png";
 
 const HomePage = () => {
   const fadeAnim = useRef(new Animated.Value(0)).current;
@@ -34,16 +34,17 @@ const HomePage = () => {
       <Image source={LogoImage} style={styles.logo} />
 
       <Text style={styles.welcomeText}>
-        নেটওয়ালা কমিউনিকেশনে {"\n"}আপানাকে স্বাগতম
+        <Text>সম্মানিত গ্রাহক :</Text>
+        {"\n"}
+        <Text style={{ color: "#FF7C00" }}>
+          নেটওয়ালা কমিউনিকেশনে {"\n"}আপানাকে স্বাগতম
+        </Text>
         {"\n\n"}
         <Text style={styles.contactText}>
-          যোগাযোগঃ 0964 990 1064, 0171 990 1064{"\n"}
+          যোগাযোগঃ 09649901064, 01719901064{"\n"}
           মশান বাজার, হাইস্কুল সংলগ্ন মার্কেট, মিরপুর, কুষ্টিয়া-৭০৩০
         </Text>
         {"\n\n"}
-      </Text>
-      <Text style={styles.subtitle}>
-        স্বপ্নের গতি আপনার হাতে, চলুন এগিয়ে যায় নতুন কিছুর সাথে !!
       </Text>
     </Animated.View>
   );
@@ -54,7 +55,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#E0E3EA",
+    backgroundColor: "#fff",
     padding: 5,
   },
   logo: {
@@ -76,6 +77,7 @@ const styles = StyleSheet.create({
   contactText: {
     color: "#000",
     fontSize: 15,
+    fontWeight: "900",
   },
 });
 
