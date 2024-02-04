@@ -17,7 +17,7 @@ export default function App() {
   }, []);
 
   if (!isSplashReady) {
-    return <View style={{ flex: 1, backgroundColor: "#000" }} />;
+    return <View style={{ flex: 1, backgroundColor: "#fff" }} />;
   }
 
   return (
