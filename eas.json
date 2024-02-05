@@ -1,7 +1,6 @@
 {
   "cli": {
-    "version": ">= 7.1.2",
-    "easProjectId": "Netwala-Customer"
+    "version": ">= 7.1.2"
   },
   "build": {
     "preview": {
